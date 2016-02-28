@@ -1,6 +1,7 @@
 # HTN-Backend-Challenge
 
-## Instructions
+### Set-up Instructions
+
 
 Initialize SQLiteDB
 
@@ -20,4 +21,4 @@ Run Flask app
 python app.py
 ```
 
-You're good to go! 
+You're good to go! :+1:
