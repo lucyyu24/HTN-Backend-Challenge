@@ -22,14 +22,6 @@ def close_connection(exception):
 	if db is not None:
 		db.close()
 
-# @app.cli.command('initdb')
-def init_db():
-	with app.app_context():
-		with app.open_resource('schema.sql', mode='r') as f:
-			db.cursor().executescript(f.read())
-		db.commit()
-	print('Initialized the database.')
-
 def query_db(query, args=()):
 	cur = db.cursor()
 	cur.execute(query, args)
